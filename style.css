@@ -1,0 +1,257 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* html, body{
+    width: 100%;
+    height: 100vmin;
+} */
+
+.main{
+    min-height: 100vh;
+    background-color: rgba(0, 0, 0, 0.712);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#heading{
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 30px;
+
+    color: snow;
+}
+
+.container{
+    width: 430px;
+    height: 500px;
+    /* border: 1px solid rgb(150, 124, 124); */
+    border-radius: 10px;
+    box-shadow: 0 0 10px 2px seashell;
+    padding-top: 2px;
+    position: relative;
+
+    /* overflow: auto; */
+}
+
+.formData{
+    margin: 5px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    position: sticky;
+    top: 0;
+    padding-bottom: 5px;
+    background-color: #adadad38;
+
+    z-index: 10;
+}
+
+.formData input{
+
+    width: calc(100%-120px);
+    font-size: 1.2rem;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    background-color:#cecece ;
+    box-shadow: 0 0 8px 2px whitesmoke;
+}
+
+.formData .select{
+    width: 115px;
+    font-size: .8rem;
+    padding: 8px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    margin: 4px;
+    cursor: pointer;
+    background-color:#cecece;
+    box-shadow: 0 0 8px 2px whitesmoke;
+}
+
+#browsers option{
+    cursor: pointer;
+}
+
+
+.formData button{
+    font-size: 1.5rem;
+    padding: 8px 22px;
+    margin: 15px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 8px;
+    outline: none;
+    border: 1.5px solid white;
+    background-color: transparent;
+    font-weight: 600;
+    font-family: math;
+
+    box-shadow: 0 0 2px 1px rgb(255, 255, 255);
+}
+
+.formData button:hover{
+    cursor: pointer;
+
+    color: white;
+    border: 2px solid black;
+    box-shadow: 0 0 5px 1px rgb(0, 0, 0);
+
+}
+
+::-webkit-scrollbar{
+    width: 8px;
+    background-color: rgb(146, 144, 143);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb{
+    width: 8px;
+    background-color: rgb(159, 174, 189);
+    border-radius: 10px;
+}
+
+.box{
+    position: relative;
+    margin: 10px 0;
+    height: calc(100% - 160px);
+    overflow: auto;
+}
+
+.listitem{
+    width: 95%;
+    padding: 5px 8px;
+    height: 60px;
+    margin: 10px auto;
+    border-radius: 10px;
+    background-color: rgb(139, 168, 168);
+    display: flex;
+
+
+    justify-content: space-between;
+}
+
+.work{
+    margin: 11px 2px;
+    text-transform: capitalize;
+    font-size: .91rem;
+}
+
+.work h6{
+    margin: 3px 8px;
+    font-weight: 200;
+    font-size: .8rem;
+}
+
+.progress{
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    position: relative;
+}
+
+.pending{
+    font-size: 1rem;
+    padding: 8px;
+    width: 90px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    position: relative;
+    left: -20px;
+    color: rgb(105, 105, 11);
+    background-color: rgb(213, 214, 214);
+
+}
+
+.pending:hover{
+    font-size: .9rem;
+    color: black;
+    font-weight: 600;
+}
+
+.completed{
+    font-weight: 600;
+    font-size: .9rem;
+    color: rgb(201, 78, 7);
+    background-color: rgb(184, 233, 88);
+}
+
+.delete{
+    font-size: 1.2rem;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    background-color: rgb(252, 57, 57);
+}
+
+.delete i{
+    font-size: 1.4rem;
+    color: rgb(227, 227, 228);
+}
+
+.delete:hover{
+    background-color: rgba(255, 255, 255, 0.788);
+    cursor: pointer;
+    i{
+        color: rgb(252, 57, 57);
+    }
+}
+
+
+@media (max-width : 430px) {
+    .main{
+        width: 100%;
+        min-height: 100vmin;
+    }
+    .container{
+        width: 350px;
+        margin-bottom: 40px;
+    }
+    .formData{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 200px;
+    }
+    .formData input{
+        font-size: 1.2rem;
+        padding: 5px;
+        margin-top: 20px;
+        box-shadow: none;
+        box-shadow: 0 0 5px 2px rgb(24, 23, 23);
+    }
+    .formData .select{
+        margin-top: 10px;
+        margin-bottom: 5px;
+        box-shadow: none;
+        box-shadow: 0 0 5px 2px rgb(24, 23, 23);
+
+    }
+    .formData button {
+        font-size: 1.2rem;
+        margin: 0;
+    }
+
+    .box {
+        position: relative;
+        margin: 10px 0;
+        height: 280px;
+        overflow: auto;
+    }
+    #heading {
+        margin-top: 30px;
+    }
+}
